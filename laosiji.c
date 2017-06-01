@@ -2,8 +2,10 @@
 
 // functions entry 函数模块
 static zend_function_entry laosiji_functions[] = {
-    ZEND_FE(laosiji_hello, NULL) // 声明
-    {NULL, NULL, NULL}           // 固定不变的 照着写就行了
+    ZEND_FE(laosiji_hello, NULL)                            // 声明
+    ZEND_NAMED_FE(laosiji_hi, ZEND_FN(laosiji_hello), NULL) // 函数别名 ZEND_NAMED_FE
+    ZEND_FALIAS(laosiji_hehe, laosiji_hello, NULL)          // 函数别名 ZEND_FALIAS
+    {NULL, NULL, NULL}                                      // 固定不变的 照着写就行了
 };
 
 // module entry

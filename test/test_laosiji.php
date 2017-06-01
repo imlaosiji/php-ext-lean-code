@@ -4,3 +4,5 @@
 // var_dump(extension_loaded('laosiji'));
 
 laosiji_hello();
+laosiji_hi();
+laosiji_hehe();
