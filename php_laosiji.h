@@ -12,3 +12,5 @@
 // 加载php头文件
 // 这个 很有必要哈
 #include "php.h"
+
+ZEND_FUNCTION(laosiji_hello);
